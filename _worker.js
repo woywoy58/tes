@@ -3,11 +3,11 @@ import { connect } from "cloudflare:sockets";
 // import { Buffer } from "node:buffer";
 
 // Variables
-const rootDomain = "panelku.workers.dev"; // Ganti dengan domain utama kalian
+const rootDomain = "i-c5e.workers.dev"; // Ganti dengan domain utama kalian
 const serviceName = "tes"; // Ganti dengan nama workers kalian
-const apiKey = ""; // Ganti dengan Global API key kalian (https://dash.cloudflare.com/profile/api-tokens)
-const apiEmail = ""; // Ganti dengan email yang kalian gunakan
-const accountID = ""; // Ganti dengan Account ID kalian (https://dash.cloudflare.com -> Klik domain yang kalian gunakan)
+const apiKey = "_fP0S8_9p77bG_ftZTqcaZ3_8gydKt61RI8IltPW"; // Ganti dengan Global API key kalian (https://dash.cloudflare.com/profile/api-tokens)
+const apiEmail = "i@nqmo.com"; // Ganti dengan email yang kalian gunakan
+const accountID = "c5e5515a345cd768ce3bf15098e069a4"; // Ganti dengan Account ID kalian (https://dash.cloudflare.com -> Klik domain yang kalian gunakan)
 const zoneID = ""; // Ganti dengan Zone ID kalian (https://dash.cloudflare.com -> Klik domain yang kalian gunakan)
 let isApiReady = false;
 let proxyIP = "";
@@ -17,8 +17,8 @@ let cachedProxyList = [];
 const APP_DOMAIN = `${serviceName}.${rootDomain}`;
 const PORTS = [443, 80];
 const PROTOCOLS = [reverse("najort"), reverse("sselv"), reverse("ss")];
-const KV_PROXY_URL = "https://raw.githubusercontent.com/Ahmad1-1/Proxy/refs/heads/main/kvujicoba.json";
-const PROXY_BANK_URL = "https://raw.githubusercontent.com/Ahmad1-1/Proxy/refs/heads/main/ujicoba.txt";
+const KV_PROXY_URL = "https://raw.githubusercontent.com/woywoy58/Proxy/refs/heads/main/kvujicoba.json";
+const PROXY_BANK_URL = "https://raw.githubusercontent.com/woywoy58/Proxy/refs/heads/main/ujicoba.txt";
 const DNS_SERVER_ADDRESS = "8.8.8.8";
 const DNS_SERVER_PORT = 53;
 const PROXY_HEALTH_CHECK_API = "https://id1.foolvpn.me/api/v1/check";
@@ -118,7 +118,7 @@ function getAllConfig(request, hostName, proxyList, page = 0) {
 
     // Build HTML
     const document = new Document(request);
-    document.setTitle("Welcome to <span class='text-blue-500 font-semibold'>tes</span>");
+    document.setTitle("V2RAY to <span class='text-blue-500 font-semibold'>LIFETIME</span>");
     document.addInfo(`Total: ${proxyList.length}`);
     document.addInfo(`Page: ${page}/${Math.floor(proxyList.length / PROXY_PER_PAGE)}`);
 
